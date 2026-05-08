@@ -134,10 +134,38 @@ const experiences = [
     ],
     tags: ["Node.js", "TypeScript", "Jest", "Supertest", "REST API"],
   },
+  {
+    company: "Moovipet",
+    role: "Desenvolvedor PHP Laravel · Freelance",
+    period: "Ago 2021 — Dez 2021 · 5 meses",
+    location: "Brasil · Freelance",
+    logo: "MP",
+    color: "bg-amber-500",
+    bullets: [
+      "Desenvolveu calculadora dinâmica de precificação por trechos de rota, com composição automática do valor total e tarifas distintas por segmento",
+      "Implementou algoritmo de verificação de capacidade para transporte pet, validando vagas disponíveis com base no tamanho e peso de cada animal",
+      "Integrou os módulos diretamente ao sistema legado da empresa, garantindo compatibilidade e continuidade operacional",
+    ],
+    tags: ["PHP", "Laravel", "MySQL"],
+  },
+  {
+    company: "Grupo PetraGold",
+    role: "Desenvolvedor Node.js",
+    period: "Abr 2018 — Ago 2021 · 3 anos 5 meses",
+    location: "Rio de Janeiro, RJ",
+    logo: "PG",
+    color: "bg-yellow-600",
+    bullets: [
+      "Atuou em arquitetura de microsserviços com MoleculerJS, sendo responsável por desenvolvimento e manutenção de serviços independentes",
+      "Desenvolveu microsserviço de validação de documentos (CNPJ/CPF) com integração direta à Receita Federal, assegurando autenticidade em fluxos críticos de negócio",
+      "Primeira experiência profissional com Node.js — evoluiu de forma autodidata durante a pandemia, atingindo nível de produção em ambiente real de microsserviços",
+    ],
+    tags: ["Node.js", "MoleculerJS", "MongoDB", "Microsserviços"],
+  },
 ]
 
 const stack = [
-  { category: "Backend", icon: Server, items: ["Node.js", "TypeScript", "Fastify", "Express", "NestJS", "Moleculer"] },
+  { category: "Backend", icon: Server, items: ["Node.js", "TypeScript", "Fastify", "Express", "NestJS", "Moleculer", "PHP", "Laravel"] },
   { category: "Frontend", icon: Globe, items: ["React", "Next.js", "Tailwind CSS", "shadcn/ui", "TanStack Query", "Vite"] },
   { category: "Banco de Dados", icon: Database, items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "TypeORM", "Knex", "Sequelize"] },
   { category: "Infraestrutura", icon: Cpu, items: ["Docker", "Apigee", "Kong", "Azion", "OpenTelemetry", "Instana"] },
