@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import {
   Github, Linkedin, Mail, ExternalLink, Code2, Server, Database,
   Globe, Terminal, Layers, Menu, X, ChevronDown, Briefcase, User,
-  Cpu, Rocket, Building2
+  Cpu, Rocket, Building2, MessageCircle
 } from 'lucide-react'
 
 const projects = [
@@ -458,7 +458,7 @@ export default function App() {
         <div className="max-w-2xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="w-10 h-10 rounded-xl bg-indigo-900/50 border border-indigo-700/50 flex items-center justify-center">
-              <Mail className="w-5 h-5 text-indigo-400" />
+              <MessageCircle className="w-5 h-5 text-indigo-400" />
             </div>
             <h2 className="text-3xl font-extrabold text-white">Contato</h2>
           </div>
@@ -475,10 +475,12 @@ export default function App() {
               <Linkedin className="w-5 h-5" /> LinkedIn
             </a>
             <a
-              href="mailto:omatsu.technologies@gmail.com"
-              className="inline-flex items-center justify-center gap-3 bg-gray-800 border border-gray-700 hover:border-indigo-500 text-white font-semibold px-8 py-4 rounded-xl transition-colors text-lg"
+              href="https://wa.me/5524981593376"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors text-lg"
             >
-              <Mail className="w-5 h-5" /> E-mail
+              <MessageCircle className="w-5 h-5" /> WhatsApp
             </a>
             <a
               href="https://github.com/omatsudev"
