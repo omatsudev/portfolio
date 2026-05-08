@@ -206,7 +206,7 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-950/90 backdrop-blur border-b border-gray-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <a href="#home" className="font-bold text-white text-lg">
-            <span className="text-indigo-400">LO</span> · Lauro Omatsu
+            <span className="text-indigo-400">LO</span><span className="hidden sm:inline"> · Lauro Omatsu</span>
           </a>
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map(l => (
