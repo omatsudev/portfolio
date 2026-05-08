@@ -436,7 +436,7 @@ export default function App() {
                 <ul className="space-y-2 mb-5">
                   {exp.bullets.map((b, j) => (
                     <li key={j} className="flex items-start gap-2 text-gray-300 text-sm">
-                      <span className="text-indigo-400 mt-0.5 shrink-0">▸</span>
+                      <span className="text-indigo-400 shrink-0 leading-5">▸</span>
                       {b}
                     </li>
                   ))}
