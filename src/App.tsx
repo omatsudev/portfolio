@@ -22,7 +22,7 @@ const projects = [
     description: "Plataforma SaaS para centralizar produtos, pedidos, estoque e NF-e de múltiplos canais de venda. Arquitetura monorepo com backend NestJS + BullMQ e frontend React.",
     url: "https://omnichannel-35w.pages.dev",
     tags: ["React", "NestJS", "TypeScript", "Redis", "BullMQ"],
-    color: "from-blue-600 to-indigo-500",
+    color: "from-blue-500 to-blue-700",
     bg: "bg-blue-50",
     border: "border-blue-200",
   },
@@ -62,9 +62,9 @@ const projects = [
     description: "Plataforma Next.js para gestão de conformidade com a Lei Geral de Proteção de Dados. Inventário de dados, gestão de consentimentos, DPO, incidentes e relatórios de compliance.",
     url: "https://lgpd-platform.vercel.app",
     tags: ["Next.js 16", "React 19", "TypeScript", "Supabase"],
-    color: "from-indigo-600 to-blue-500",
-    bg: "bg-indigo-50",
-    border: "border-indigo-200",
+    color: "from-violet-600 to-purple-500",
+    bg: "bg-violet-50",
+    border: "border-violet-200",
   },
   {
     name: "Cicla MOB",
@@ -206,14 +206,14 @@ export default function App() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-950/90 backdrop-blur border-b border-gray-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <a href="#home" className="font-bold text-white text-lg">
-            <span className="text-indigo-400">LO</span><span className="hidden sm:inline"> · Lauro Omatsu</span>
+            <span className="text-blue-400">LO</span><span className="hidden sm:inline"> · Lauro Omatsu</span>
           </a>
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map(l => (
               <a
                 key={l.id}
                 href={`#${l.id}`}
-                className={`text-sm transition-colors ${activeSection === l.id ? 'text-indigo-400 font-medium' : 'text-gray-400 hover:text-white'}`}
+                className={`text-sm transition-colors ${activeSection === l.id ? 'text-blue-400 font-medium' : 'text-gray-400 hover:text-white'}`}
               >
                 {l.label}
               </a>
@@ -222,7 +222,7 @@ export default function App() {
               href="https://www.linkedin.com/in/omatsu/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors flex items-center gap-2"
+              className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors flex items-center gap-2"
             >
               <Linkedin className="w-4 h-4" /> LinkedIn
             </a>
@@ -237,7 +237,7 @@ export default function App() {
               <a key={l.id} href={`#${l.id}`} className="text-sm text-gray-300" onClick={() => setMenuOpen(false)}>{l.label}</a>
             ))}
             <a href="https://www.linkedin.com/in/omatsu/" target="_blank" rel="noopener noreferrer"
-              className="bg-indigo-600 text-white text-sm font-medium px-4 py-2 rounded-lg text-center">LinkedIn</a>
+              className="bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg text-center">LinkedIn</a>
           </div>
         )}
       </nav>
@@ -246,22 +246,22 @@ export default function App() {
       <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 relative overflow-hidden">
         {/* Background glow */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-40 -right-40 w-96 h-96 bg-indigo-900/30 rounded-full blur-3xl" />
+          <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-900/30 rounded-full blur-3xl" />
           <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-900/20 rounded-full blur-3xl" />
         </div>
 
         <div className="max-w-4xl mx-auto text-center relative z-10 animate-fade-in">
-          <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center mx-auto mb-8 text-3xl font-black shadow-2xl shadow-indigo-900/50">
+          <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center mx-auto mb-8 text-3xl font-black shadow-2xl shadow-blue-900/50">
             LO
           </div>
-          <div className="inline-flex items-center gap-2 bg-indigo-900/40 border border-indigo-700/50 text-indigo-300 text-xs font-semibold px-3 py-1.5 rounded-full mb-6">
+          <div className="inline-flex items-center gap-2 bg-blue-900/40 border border-blue-700/50 text-blue-300 text-xs font-semibold px-3 py-1.5 rounded-full mb-6">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             Disponível para novos projetos
           </div>
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-black text-white mb-6 leading-tight">
             Lauro Omatsu
           </h1>
-          <p className="text-xl sm:text-2xl text-indigo-300 font-semibold mb-4">
+          <p className="text-xl sm:text-2xl text-blue-300 font-semibold mb-4">
             Software Engineer
           </p>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -273,10 +273,10 @@ export default function App() {
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#projects" className="inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors text-lg">
+            <a href="#projects" className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors text-lg">
               Ver projetos <Rocket className="w-5 h-5" />
             </a>
-            <a href="#contact" className="inline-flex items-center justify-center gap-2 bg-gray-800 border border-gray-700 hover:border-indigo-500 text-white font-semibold px-8 py-4 rounded-xl transition-colors text-lg">
+            <a href="#contact" className="inline-flex items-center justify-center gap-2 bg-gray-800 border border-gray-700 hover:border-blue-500 text-white font-semibold px-8 py-4 rounded-xl transition-colors text-lg">
               Entrar em contato <Mail className="w-5 h-5" />
             </a>
           </div>
@@ -291,8 +291,8 @@ export default function App() {
       <section id="about" className="py-24 px-4 sm:px-6 bg-gray-900">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 mb-12">
-            <div className="w-10 h-10 rounded-xl bg-indigo-900/50 border border-indigo-700/50 flex items-center justify-center">
-              <User className="w-5 h-5 text-indigo-400" />
+            <div className="w-10 h-10 rounded-xl bg-blue-900/50 border border-blue-700/50 flex items-center justify-center">
+              <User className="w-5 h-5 text-blue-400" />
             </div>
             <h2 className="text-3xl font-extrabold text-white">Sobre mim</h2>
           </div>
@@ -315,7 +315,7 @@ export default function App() {
                   { label: "Testes cobertos", value: "100%" },
                 ].map(s => (
                   <div key={s.label} className="bg-gray-800 border border-gray-700 rounded-xl p-4 text-center">
-                    <p className="text-3xl font-black text-indigo-400">{s.value}</p>
+                    <p className="text-3xl font-black text-blue-400">{s.value}</p>
                     <p className="text-gray-400 text-sm">{s.label}</p>
                   </div>
                 ))}
@@ -329,8 +329,8 @@ export default function App() {
                 { icon: Code2, title: "Qualidade & Testes", desc: "TDD, testes unitários com Jest e de integração com Supertest. Código limpo, documentado e sustentável." },
               ].map(c => (
                 <div key={c.title} className="flex gap-4 bg-gray-800/50 border border-gray-700/50 rounded-xl p-4">
-                  <div className="w-10 h-10 rounded-lg bg-indigo-900/50 border border-indigo-700/50 flex items-center justify-center shrink-0">
-                    <c.icon className="w-5 h-5 text-indigo-400" />
+                  <div className="w-10 h-10 rounded-lg bg-blue-900/50 border border-blue-700/50 flex items-center justify-center shrink-0">
+                    <c.icon className="w-5 h-5 text-blue-400" />
                   </div>
                   <div>
                     <p className="font-semibold text-white mb-1">{c.title}</p>
@@ -347,8 +347,8 @@ export default function App() {
       <section id="projects" className="py-24 px-4 sm:px-6 bg-gray-950">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-xl bg-indigo-900/50 border border-indigo-700/50 flex items-center justify-center">
-              <Rocket className="w-5 h-5 text-indigo-400" />
+            <div className="w-10 h-10 rounded-xl bg-blue-900/50 border border-blue-700/50 flex items-center justify-center">
+              <Rocket className="w-5 h-5 text-blue-400" />
             </div>
             <h2 className="text-3xl font-extrabold text-white">Projetos</h2>
           </div>
@@ -367,7 +367,7 @@ export default function App() {
                       <p className="text-xs text-gray-400 mt-0.5">{p.tagline}</p>
                     </div>
                     <a href={p.url} target="_blank" rel="noopener noreferrer"
-                      className="text-gray-500 hover:text-indigo-400 transition-colors mt-0.5">
+                      className="text-gray-500 hover:text-blue-400 transition-colors mt-0.5">
                       <ExternalLink className="w-4 h-4" />
                     </a>
                   </div>
@@ -415,8 +415,8 @@ export default function App() {
       <section id="experience" className="py-24 px-4 sm:px-6 bg-gray-900">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-12">
-            <div className="w-10 h-10 rounded-xl bg-indigo-900/50 border border-indigo-700/50 flex items-center justify-center">
-              <Briefcase className="w-5 h-5 text-indigo-400" />
+            <div className="w-10 h-10 rounded-xl bg-blue-900/50 border border-blue-700/50 flex items-center justify-center">
+              <Briefcase className="w-5 h-5 text-blue-400" />
             </div>
             <h2 className="text-3xl font-extrabold text-white">Experiência</h2>
           </div>
@@ -429,14 +429,14 @@ export default function App() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <h3 className="font-bold text-white text-lg">{exp.role}</h3>
-                    <p className="text-indigo-300 font-medium">{exp.company}</p>
+                    <p className="text-blue-300 font-medium">{exp.company}</p>
                     <p className="text-gray-500 text-sm">{exp.period} · {exp.location}</p>
                   </div>
                 </div>
                 <ul className="space-y-2 mb-5">
                   {exp.bullets.map((b, j) => (
                     <li key={j} className="flex items-start gap-2 text-gray-300 text-sm">
-                      <span className="text-indigo-400 shrink-0 leading-5">▸</span>
+                      <span className="text-blue-400 shrink-0 leading-5">▸</span>
                       {b}
                     </li>
                   ))}
@@ -456,8 +456,8 @@ export default function App() {
       <section id="stack" className="py-24 px-4 sm:px-6 bg-gray-950">
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center gap-3 mb-12">
-            <div className="w-10 h-10 rounded-xl bg-indigo-900/50 border border-indigo-700/50 flex items-center justify-center">
-              <Code2 className="w-5 h-5 text-indigo-400" />
+            <div className="w-10 h-10 rounded-xl bg-blue-900/50 border border-blue-700/50 flex items-center justify-center">
+              <Code2 className="w-5 h-5 text-blue-400" />
             </div>
             <h2 className="text-3xl font-extrabold text-white">Stack</h2>
           </div>
@@ -465,8 +465,8 @@ export default function App() {
             {stack.map(s => (
               <div key={s.category} className="bg-gray-900 border border-gray-800 rounded-2xl p-5">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-9 h-9 rounded-lg bg-indigo-900/50 border border-indigo-700/50 flex items-center justify-center">
-                    <s.icon className="w-4 h-4 text-indigo-400" />
+                  <div className="w-9 h-9 rounded-lg bg-blue-900/50 border border-blue-700/50 flex items-center justify-center">
+                    <s.icon className="w-4 h-4 text-blue-400" />
                   </div>
                   <span className="font-semibold text-white text-sm">{s.category}</span>
                 </div>
@@ -485,8 +485,8 @@ export default function App() {
       <section id="contact" className="py-24 px-4 sm:px-6 bg-gray-900">
         <div className="max-w-2xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <div className="w-10 h-10 rounded-xl bg-indigo-900/50 border border-indigo-700/50 flex items-center justify-center">
-              <MessageCircle className="w-5 h-5 text-indigo-400" />
+            <div className="w-10 h-10 rounded-xl bg-blue-900/50 border border-blue-700/50 flex items-center justify-center">
+              <MessageCircle className="w-5 h-5 text-blue-400" />
             </div>
             <h2 className="text-3xl font-extrabold text-white">Contato</h2>
           </div>
@@ -498,7 +498,7 @@ export default function App() {
               href="https://www.linkedin.com/in/omatsu/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors text-lg"
+              className="inline-flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl transition-colors text-lg"
             >
               <Linkedin className="w-5 h-5" /> LinkedIn
             </a>
