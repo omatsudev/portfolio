@@ -265,7 +265,7 @@ export default function App() {
             Software Engineer
           </p>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-            Mais de 15 anos em TI, com foco nos últimos 6 em desenvolvimento de software de alto impacto. Especializado em backend Node.js e TypeScript, com expertise em microsserviços e frontend moderno com React e Next.js.
+            Mais de 15 anos em TI, com foco nos últimos 8 em desenvolvimento de software de alto impacto. Especializado em backend Node.js e TypeScript, com expertise em microsserviços e frontend moderno com React e Next.js.
           </p>
           <div className="flex flex-wrap gap-3 justify-center mb-10">
             {["Node.js", "TypeScript", "React", "Next.js", "Fastify", "PostgreSQL"].map(t => (
@@ -299,7 +299,7 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Sou um engenheiro de software com <strong className="text-white">mais de 15 anos de experiência em TI</strong>, sendo os últimos 6 dedicados inteiramente ao desenvolvimento de produtos digitais de alto impacto e escalabilidade.
+                Sou um engenheiro de software com <strong className="text-white">mais de 15 anos de experiência em TI</strong>, sendo os últimos 8 dedicados inteiramente ao desenvolvimento de produtos digitais de alto impacto e escalabilidade.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 Minha especialidade é construir backends robustos com <strong className="text-white">Node.js e TypeScript</strong>, com experiência profunda em arquiteturas de microsserviços, APIs RESTful e sistemas distribuídos — usando Fastify, Express e Moleculer no dia a dia.
