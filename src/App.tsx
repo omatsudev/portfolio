@@ -310,7 +310,7 @@ export default function App() {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { label: "Anos em TI", value: "15+" },
-                  { label: "Anos como dev", value: "6+" },
+                  { label: "Anos como dev", value: "8+" },
                   { label: "Projetos SaaS", value: "7+" },
                   { label: "Testes cobertos", value: "100%" },
                 ].map(s => (
