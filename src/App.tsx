@@ -129,7 +129,7 @@ const experiences = [
       "Desenvolvimento completo do backend de uma rede social educacional integrada à plataforma Descomplica",
       "API REST em Node.js + TypeScript com arquitetura monolítica e padrão Repository",
       "Módulos de cadastro/perfil, turmas, threads, notificações e sistema de convites",
-      "95% de cobertura com testes unitários (Jest) e de integração (Supertest)",
+      "100% de cobertura com testes unitários (Jest) e de integração (Supertest)",
       "Entrega do MVP no prazo, viabilizando validação do produto no mercado",
     ],
     tags: ["Node.js", "TypeScript", "Jest", "Supertest", "REST API"],
@@ -284,7 +284,7 @@ export default function App() {
                   { label: "Anos em TI", value: "15+" },
                   { label: "Anos como dev", value: "6+" },
                   { label: "Projetos SaaS", value: "7+" },
-                  { label: "Testes cobertos", value: "95%+" },
+                  { label: "Testes cobertos", value: "100%" },
                 ].map(s => (
                   <div key={s.label} className="bg-gray-800 border border-gray-700 rounded-xl p-4 text-center">
                     <p className="text-3xl font-black text-indigo-400">{s.value}</p>
