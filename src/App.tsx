@@ -62,9 +62,9 @@ const projects = [
     description: "Plataforma Next.js para gestão de conformidade com a Lei Geral de Proteção de Dados. Inventário de dados, gestão de consentimentos, DPO, incidentes e relatórios de compliance.",
     url: "https://lgpd-platform.vercel.app",
     tags: ["Next.js 16", "React 19", "TypeScript", "Supabase"],
-    color: "from-violet-600 to-purple-500",
-    bg: "bg-violet-50",
-    border: "border-violet-200",
+    color: "from-indigo-600 to-blue-500",
+    bg: "bg-indigo-50",
+    border: "border-indigo-200",
   },
   {
     name: "Cicla MOB",
@@ -247,11 +247,11 @@ export default function App() {
         {/* Background glow */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute -top-40 -right-40 w-96 h-96 bg-indigo-900/30 rounded-full blur-3xl" />
-          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-violet-900/20 rounded-full blur-3xl" />
+          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-900/20 rounded-full blur-3xl" />
         </div>
 
         <div className="max-w-4xl mx-auto text-center relative z-10 animate-fade-in">
-          <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-indigo-500 to-violet-600 flex items-center justify-center mx-auto mb-8 text-3xl font-black shadow-2xl shadow-indigo-900/50">
+          <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center mx-auto mb-8 text-3xl font-black shadow-2xl shadow-indigo-900/50">
             LO
           </div>
           <div className="inline-flex items-center gap-2 bg-indigo-900/40 border border-indigo-700/50 text-indigo-300 text-xs font-semibold px-3 py-1.5 rounded-full mb-6">
