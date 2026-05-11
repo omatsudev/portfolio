@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import {
   Github, Linkedin, Mail, ExternalLink, Code2, Server, Database,
-  Globe, Terminal, Layers, Menu, X, ChevronDown, Briefcase, User,
+  Globe, Terminal, Layers, Menu, X, ChevronDown, User,
   Cpu, Rocket, Building2, MessageCircle
 } from 'lucide-react'
 
@@ -78,89 +78,68 @@ const projects = [
   },
   {
     name: "Plataforma de Mini Aplicações",
-    tagline: "Large-scale Retail Super App — Luizalabs",
-    description: "Serviço backend de alta escala para gerenciamento do ciclo de vida de mini aplicações em um super app de varejo. Foco em APIs, versionamento, distribuição e confiabilidade distribuída.",
+    tagline: "Luizalabs · Magazine Luiza — Aplicativo Magalu",
+    description: "Serviço backend de alta escala para gerenciamento do ciclo de vida de mini aplicações dentro do Aplicativo Magalu, o super app de varejo da Magazine Luiza. Foco em APIs, versionamento, distribuição e confiabilidade distribuída.",
     url: "https://github.com/omatsudev",
     tags: ["Node.js", "TypeScript", "Fastify", "Distributed Systems", "Observability", "Caching"],
-    color: "from-slate-700 to-gray-600",
-    bg: "bg-slate-50",
-    border: "border-slate-200",
+    color: "from-blue-700 to-blue-500",
+    bg: "bg-blue-50",
+    border: "border-blue-200",
     isWork: true,
+    company: "Luizalabs · Magazine Luiza",
+    period: "Nov 2022 — Presente",
   },
   {
     name: "Painel Administrativo",
-    tagline: "Large-scale Retail Super App — Luizalabs",
-    description: "Interface administrativa para gestão e monitoramento de mini aplicações em plataforma de varejo de grande escala. Controles de visibilidade, versionamento e observabilidade em tempo real.",
+    tagline: "Luizalabs · Magazine Luiza — Aplicativo Magalu",
+    description: "Interface administrativa para gestão e monitoramento de mini aplicações do Aplicativo Magalu. Controles de visibilidade, versionamento, rollout e observabilidade em tempo real para times internos da Magazine Luiza.",
     url: "https://github.com/omatsudev",
     tags: ["Next.js", "TypeScript", "NextAuth", "Tailwind"],
-    color: "from-slate-700 to-gray-600",
-    bg: "bg-slate-50",
-    border: "border-slate-200",
+    color: "from-blue-700 to-blue-500",
+    bg: "bg-blue-50",
+    border: "border-blue-200",
     isWork: true,
-  },
-]
-
-const experiences = [
-  {
-    company: "Jaya Tech → Luizalabs",
-    role: "Software Engineer — Node.js | TypeScript | React | Next.js",
-    period: "Nov 2022 — Presente · 3 anos",
-    location: "São Paulo, SP · Remoto",
-    logo: "LL",
-    color: "bg-blue-600",
-    bullets: [
-      "Contribuição para plataformas internas de alta escala no ecossistema de varejo digital da Luizalabs",
-      "Desenvolvimento e manutenção de microsserviços em Node.js + TypeScript com Fastify, com foco em alta disponibilidade",
-      "Gerenciamento e otimização de APIs com ferramentas de API Gateway para controle de tráfego e segurança em produção",
-      "Observabilidade e monitoramento com ferramentas de APM e OpenTelemetry, assegurando SLAs do sistema",
-      "Desenvolvimento frontend com React e Next.js para interfaces administrativas e de alto tráfego",
-      "Cobertura robusta de testes unitários e de integração com Jest em ambiente de alta criticidade",
-    ],
-    tags: ["Node.js", "TypeScript", "Fastify", "React", "Next.js", "API Gateway", "OpenTelemetry", "Jest"],
+    company: "Luizalabs · Magazine Luiza",
+    period: "Nov 2022 — Presente",
   },
   {
-    company: "TO Brasil",
-    role: "Desenvolvedor Node.js | TypeScript",
-    period: "Dez 2020 — Mar 2022 · 1 ano 4 meses",
-    location: "Brasil · Remoto",
-    logo: "TO",
-    color: "bg-emerald-600",
-    bullets: [
-      "Desenvolvimento completo do backend de uma rede social educacional integrada à plataforma Descomplica",
-      "API REST em Node.js + TypeScript com arquitetura monolítica e padrão Repository",
-      "Módulos de cadastro/perfil, turmas, threads, notificações e sistema de convites",
-      "100% de cobertura com testes unitários (Jest) e de integração (Supertest)",
-      "Entrega do MVP no prazo, viabilizando validação do produto no mercado",
-    ],
+    name: "Rede Social Educacional",
+    tagline: "TO Brasil — Integração Descomplica",
+    description: "Backend completo de uma rede social educacional integrada à plataforma Descomplica. API REST com módulos de cadastro/perfil, turmas, threads, notificações e sistema de convites. 100% de cobertura de testes, com entrega do MVP no prazo.",
+    url: "https://github.com/omatsudev",
     tags: ["Node.js", "TypeScript", "Jest", "Supertest", "REST API"],
+    color: "from-emerald-600 to-green-500",
+    bg: "bg-emerald-50",
+    border: "border-emerald-200",
+    isWork: true,
+    company: "TO Brasil",
+    period: "Dez 2020 — Mar 2022",
   },
   {
-    company: "Moovipet",
-    role: "Desenvolvedor PHP Laravel · Freelance",
-    period: "Ago 2021 — Dez 2021 · 5 meses",
-    location: "Brasil · Freelance",
-    logo: "MP",
-    color: "bg-amber-500",
-    bullets: [
-      "Desenvolveu calculadora dinâmica de precificação por trechos de rota, com composição automática do valor total e tarifas distintas por segmento",
-      "Implementou algoritmo de verificação de capacidade para transporte pet, validando vagas disponíveis com base no tamanho e peso de cada animal",
-      "Integrou os módulos diretamente ao sistema legado da empresa, garantindo compatibilidade e continuidade operacional",
-    ],
+    name: "Sistema de Precificação e Transporte Pet",
+    tagline: "Moovipet — Freelance",
+    description: "Calculadora dinâmica de precificação por trechos de rota com composição automática do valor total. Algoritmo de verificação de capacidade para transporte pet validando vagas por tamanho e peso de cada animal, integrado ao sistema legado.",
+    url: "https://github.com/omatsudev",
     tags: ["PHP", "Laravel", "MySQL"],
+    color: "from-amber-500 to-yellow-400",
+    bg: "bg-amber-50",
+    border: "border-amber-200",
+    isWork: true,
+    company: "Moovipet",
+    period: "Ago 2021 — Dez 2021",
   },
   {
-    company: "Grupo PetraGold",
-    role: "Desenvolvedor Node.js",
-    period: "Abr 2018 — Ago 2021 · 3 anos 5 meses",
-    location: "Rio de Janeiro, RJ",
-    logo: "PG",
-    color: "bg-yellow-600",
-    bullets: [
-      "Atuou em arquitetura de microsserviços com MoleculerJS, sendo responsável por desenvolvimento e manutenção de serviços independentes",
-      "Desenvolveu microsserviço de validação de documentos (CNPJ/CPF) com integração direta à Receita Federal, assegurando autenticidade em fluxos críticos de negócio",
-      "Primeira experiência profissional com Node.js — evoluiu de forma autodidata durante a pandemia, atingindo nível de produção em ambiente real de microsserviços",
-    ],
+    name: "Microsserviços de Validação Documental",
+    tagline: "Grupo PetraGold — Rio de Janeiro",
+    description: "Arquitetura de microsserviços com MoleculerJS para plataforma financeira. Microsserviço de validação de CNPJ/CPF com integração direta à Receita Federal, garantindo autenticidade em fluxos críticos de negócio.",
+    url: "https://github.com/omatsudev",
     tags: ["Node.js", "MoleculerJS", "MongoDB", "Microsserviços"],
+    color: "from-yellow-600 to-amber-500",
+    bg: "bg-yellow-50",
+    border: "border-yellow-200",
+    isWork: true,
+    company: "Grupo PetraGold",
+    period: "Abr 2018 — Ago 2021",
   },
 ]
 
@@ -179,7 +158,7 @@ export default function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'projects', 'experience', 'stack', 'contact']
+      const sections = ['home', 'about', 'projects', 'stack', 'contact']
       for (const id of sections.reverse()) {
         const el = document.getElementById(id)
         if (el && window.scrollY >= el.offsetTop - 100) {
@@ -195,7 +174,6 @@ export default function App() {
   const navLinks = [
     { id: 'about', label: 'Sobre' },
     { id: 'projects', label: 'Projetos' },
-    { id: 'experience', label: 'Experiência' },
     { id: 'stack', label: 'Stack' },
     { id: 'contact', label: 'Contato' },
   ]
@@ -384,7 +362,7 @@ export default function App() {
 
           {/* Work projects */}
           <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-6 flex items-center gap-2">
-            <Building2 className="w-3 h-3" /> Projetos Profissionais — Luizalabs
+            <Building2 className="w-3 h-3" /> Projetos Profissionais
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {projects.filter(p => p.isWork).map(p => (
@@ -392,11 +370,14 @@ export default function App() {
                 <div className={`h-2 bg-gradient-to-r ${p.color}`} />
                 <div className="p-5">
                   <div className="flex items-start justify-between mb-3">
-                    <div>
+                    <div className="flex-1 min-w-0">
                       <h3 className="font-bold text-white">{p.name}</h3>
-                      <p className="text-xs text-gray-400 mt-0.5">{p.tagline}</p>
+                      <p className="text-xs text-blue-400 font-medium mt-0.5">{p.tagline}</p>
+                      {'period' in p && (
+                        <p className="text-xs text-gray-500 mt-0.5">{p.period}</p>
+                      )}
                     </div>
-                    <span className="text-xs bg-slate-800 border border-slate-700 text-slate-400 px-2 py-1 rounded-md">Corporativo</span>
+                    <span className="text-xs bg-slate-800 border border-slate-700 text-slate-400 px-2 py-1 rounded-md shrink-0 ml-3">Profissional</span>
                   </div>
                   <p className="text-gray-400 text-sm leading-relaxed mb-4">{p.description}</p>
                   <div className="flex flex-wrap gap-1.5">
@@ -404,47 +385,6 @@ export default function App() {
                       <span key={t} className="bg-gray-800 text-gray-400 text-xs px-2 py-1 rounded-md">{t}</span>
                     ))}
                   </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Experience */}
-      <section id="experience" className="py-24 px-4 sm:px-6 bg-gray-900">
-        <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-3 mb-12">
-            <div className="w-10 h-10 rounded-xl bg-blue-900/50 border border-blue-700/50 flex items-center justify-center">
-              <Briefcase className="w-5 h-5 text-blue-400" />
-            </div>
-            <h2 className="text-3xl font-extrabold text-white">Experiência</h2>
-          </div>
-          <div className="space-y-8">
-            {experiences.map((exp, i) => (
-              <div key={i} className="bg-gray-800/50 border border-gray-700/50 rounded-2xl p-6">
-                <div className="flex items-start gap-4 mb-5">
-                  <div className={`w-12 h-12 rounded-xl ${exp.color} flex items-center justify-center text-white font-black text-sm shrink-0`}>
-                    {exp.logo}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="font-bold text-white text-lg">{exp.role}</h3>
-                    <p className="text-blue-300 font-medium">{exp.company}</p>
-                    <p className="text-gray-500 text-sm">{exp.period} · {exp.location}</p>
-                  </div>
-                </div>
-                <ul className="space-y-2 mb-5">
-                  {exp.bullets.map((b, j) => (
-                    <li key={j} className="flex items-start gap-2 text-gray-300 text-sm">
-                      <span className="text-blue-400 shrink-0 leading-5">▸</span>
-                      {b}
-                    </li>
-                  ))}
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  {exp.tags.map(t => (
-                    <span key={t} className="bg-gray-800 border border-gray-700 text-gray-400 text-xs px-2.5 py-1 rounded-lg">{t}</span>
-                  ))}
                 </div>
               </div>
             ))}
